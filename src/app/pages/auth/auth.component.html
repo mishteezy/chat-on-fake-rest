@@ -1,0 +1,27 @@
+<div class="auth__container"
+     [formGroup]="form">
+  <div class="input-field">
+    <label>Username:</label>
+    <input type="text"
+           class="auth__input"
+           formControlName="username">
+  </div>
+  <div class="input-field">
+    <label>Password:</label>
+    <input type="password"
+           class="auth__input"
+           formControlName="password">
+  </div>
+
+  <div class="error-container">
+    <div *ngIf="authError$ | async as error"
+         class="error">
+      {{ error }}
+    </div>
+  </div>
+
+  <button class="auth__btn"
+          (click)="login()">
+    Log in
+  </button>
+</div>

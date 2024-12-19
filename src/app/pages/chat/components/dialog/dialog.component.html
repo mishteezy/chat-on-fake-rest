@@ -1,0 +1,20 @@
+<ng-container *ngIf="(channel$ | async) as channel">
+  <ng-container *ngIf="channel.id; else emptyChannel">
+    <h4>{{ channel.name }}</h4>
+
+    <div class="messages__container">
+      <app-message-item *ngFor="let message of channel.messages"
+                        [message]="message"></app-message-item>
+    </div>
+
+    <div class="input__container">
+      <input type="text"
+             [formControl]="inputControl">
+      <button (click)="send()">Send</button>
+    </div>
+  </ng-container>
+</ng-container>
+
+<ng-template #emptyChannel>
+  <h3 class="empty-channel">Select channel</h3>
+</ng-template>

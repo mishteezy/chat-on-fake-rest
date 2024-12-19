@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { AppComponent } from './app.component';
+import { UserComponent } from './user.component';
 import { provideMockStore } from '@ngrx/store/testing';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('UserComponent', () => {
+  let component: UserComponent;
+  let fixture: ComponentFixture<UserComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
-      declarations: [AppComponent],
+      declarations: [UserComponent],
       providers: [provideMockStore({})],
     });
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(UserComponent);
     component = fixture.componentInstance;
   });
 

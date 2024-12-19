@@ -1,0 +1,28 @@
+.auth__container {
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth__btn {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.error-container {
+  height: 2rem;
+}
+
+.error {
+  background-color: white;
+  color: red;
+  padding: 0.5rem;
+}
+
+.input-field label {
+  color: white;
+}

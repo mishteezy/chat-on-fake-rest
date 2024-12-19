@@ -1,0 +1,6 @@
+<div class="status"
+     [ngClass]="{
+  online: user.is_online,
+  offline: !user.is_online
+}"></div>
+<div>{{ user.username }}</div>

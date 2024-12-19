@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  height: 100vh;
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  height: 30rem;
+  width: 25rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    align-self: flex-start;
+
+    div {
+      cursor: pointer;
+      padding: 1rem;
+      font-size: 1.5rem;
+
+      &:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+
+  > div {
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+}

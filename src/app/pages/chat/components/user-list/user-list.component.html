@@ -1,0 +1,34 @@
+<div class="user-list__container">
+  <h4>USERS</h4>
+  <div class="users">
+    <app-user-item *ngFor="let user of (users$ | async)"
+                   [user]="user"></app-user-item>
+  </div>
+  <button class="add-btn"
+          (click)="showModal()">+ Add user</button>
+  <dialog #modal
+          class="modal"
+          [formGroup]="form">
+    <header class="modal-header">
+      <div (click)="closeModal()">X</div>
+    </header>
+    <div class="modal-content">
+      <div class="input-field">
+        <label>Username:</label>
+        <input type="text"
+               class="auth__input"
+               formControlName="username">
+      </div>
+      <div class="input-field">
+        <label>Password:</label>
+        <input type="text"
+               class="auth__input"
+               formControlName="password">
+      </div>
+      <button class="add-btn"
+              (click)="createUser()">
+        Create user
+      </button>
+    </div>
+  </dialog>
+</div>

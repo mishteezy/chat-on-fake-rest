@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.add-btn {
+  width: 8rem;
+  background-color: gold;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  margin: 25vh 30vw;
+  height: 20rem;
+  width: 30rem;
+  border: none;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+
+  div {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.input-field {
+  label {
+    display: block;
+    margin-left: 0.5rem;
+  }
+
+  input {
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="account__container">
+  <div class="account__name">
+    <h4>{{ username$ | async }}</h4>
+    <small>IT'S YOU</small>
+  </div>
+
+  <div class="account__btn-container">
+    <div class="account__btn"
+         (click)="navigateToUser()">
+      <img src="../../../../../assets/settings.svg">
+      <small>SETTINGS</small>
+    </div>
+    <div class="account__btn"
+         (click)="logout()">
+      <img src="../../../../../assets/logout.svg">
+      <small>LOG OUT</small>
+    </div>
+  </div>
+</div>

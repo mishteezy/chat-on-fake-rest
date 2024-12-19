@@ -1,0 +1,11 @@
+.channel-list__container {
+  padding: 1rem 0;
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

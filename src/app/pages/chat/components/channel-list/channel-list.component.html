@@ -1,0 +1,27 @@
+<div class="channel-list__container">
+  <h4>CHANNELS</h4>
+  <div class="channels">
+    <app-channel-item *ngFor="let channel of (channels$ | async)"
+                      [channel]="channel"
+                      (click)="selectChannel(channel.id)"></app-channel-item>
+  </div>
+  <button class="add-btn"
+          (click)="showModal()">+ Add channel</button>
+  <dialog #modal
+          class="modal">
+    <header class="modal-header">
+      <div (click)="closeModal()">X</div>
+    </header>
+    <div class="modal-content">
+      <div class="input-field">
+        <label>Channel name:</label>
+        <input type="text"
+               [formControl]="name">
+      </div>
+      <button class="add-btn"
+              (click)="createChannel()">
+        Create channel
+      </button>
+    </div>
+  </dialog>
+</div>

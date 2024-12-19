@@ -1,0 +1,30 @@
+.chat__container {
+  display: flex;
+  height: calc(100vh - 2rem);
+  background-color: white;
+  display: flex;
+  padding: 1rem;
+}
+
+.chat__left {
+  width: 45vw;
+  max-width: 35rem;
+  padding: 0.5rem 1rem;
+}
+
+.chat__right {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.vertical-separator {
+  background-color: grey;
+  width: 1px;
+  height: 100%;
+}
+
+.horizontal-separator {
+  background-color: grey;
+  height: 1px;
+  width: 100%;
+}

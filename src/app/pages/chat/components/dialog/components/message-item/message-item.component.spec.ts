@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { AppComponent } from './app.component';
+import { MessageItemComponent } from './message-item.component';
 import { provideMockStore } from '@ngrx/store/testing';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('MessageItemComponent', () => {
+  let component: MessageItemComponent;
+  let fixture: ComponentFixture<MessageItemComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
-      declarations: [AppComponent],
+      declarations: [MessageItemComponent],
       providers: [provideMockStore({})],
     });
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(MessageItemComponent);
     component = fixture.componentInstance;
   });
 

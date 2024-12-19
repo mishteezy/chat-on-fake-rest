@@ -1,0 +1,5 @@
+<div class="message__container"
+     [ngClass]="{output: message.from_user ===  (username$ | async)}">
+  <h5>{{ message.from_user }}</h5>
+  <pre>{{ message.content }}</pre>
+</div>

@@ -1,0 +1,49 @@
+.account__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.account__name {
+  margin-top: 0.5rem;
+
+  h4 {
+    line-height: 0.7rem;
+  }
+
+  small {
+    font-size: 0.7rem;
+    color: grey;
+  }
+}
+
+.account__btn-container {
+  display: flex;
+}
+
+.account__btn {
+  padding: 0.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  small {
+    font-size: 0.7rem;
+    color: grey;
+  }
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+}
